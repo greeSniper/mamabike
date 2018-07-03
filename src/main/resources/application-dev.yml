@@ -1,0 +1,26 @@
+spring:
+  datasource:
+     name: test
+     url: jdbc:mysql://localhost:3306/mamabike
+     username: root
+     password: 123456
+
+  #activeMQ
+  activemq:
+      broker-url: tcp://localhost:61616
+      pool:
+        enabled: false
+
+  #springdata
+  data:
+    #mongoDB    #mongodb note:mongo3.x will not use host and port,only use uri
+    mongodb:
+      uri: mongodb://localhost:27017/mamabike
+
+#reids
+redis:
+    host: 192.168.93.88
+    port: 6379
+    max-idle: 5
+    max-total: 10
+    max-wait-millis: 3000
